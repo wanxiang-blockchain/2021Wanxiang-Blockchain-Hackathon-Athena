@@ -58,13 +58,12 @@ docs/_build/
 # PyBuilder
 target/
 script
-.idea
 0*.py
 .DS_Store
 venv
 *.csv
 script
 exponent/interface_old.py
-
+.idea
 #vscode
 .vscode/settings.json
