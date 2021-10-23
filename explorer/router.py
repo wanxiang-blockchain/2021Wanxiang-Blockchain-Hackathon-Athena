@@ -7,6 +7,15 @@ url_map = {
         '/search': [common.search, ['POST']],
         '/search_miner_or_wallet': [common.search_miner_or_wallet, ['POST']],
     },
+    '/stat': {
+        '/get_overview_stat': [overview.get_overview_stat, ['POST']],
+        '/get_overview_day_list': [overview.get_overview_day_list, ['POST']],
+        '/get_gas_trends': [message.get_gas_trends, ['POST']],
+        '/get_gas_stat_all': [message.get_gas_stat_all, ['POST']],
+        '/get_overview_power_trends': [overview.get_overview_power_trends, ['POST']],
+        '/get_overview_stat_list': [overview.get_overview_stat_list, ['POST']],
+        '/get_overview_stat_trends': [overview.get_overview_stat_trends, ['POST']],
+    },
     '/block_chain': {
         '/get_tipsets': [block.get_tipsets, ['POST']],
         '/get_tipset_info': [block.get_tipset_info, ['POST']],
